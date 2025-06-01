@@ -31,10 +31,6 @@ El propósito de esta web es informar y motivar a los usuarios a tomar acción m
 3. Usa `IntersectionObserver` para aplicar animaciones a medida que se hace scroll.
 4. Incluye enlaces útiles y llamadas a la acción concretas.
 
-## 📸 Vista previa
-
-> Agrega una captura de pantalla si lo deseas.
-
 ## ✍️ Autor
 
 **Aitor Gomez Cerrato**  
