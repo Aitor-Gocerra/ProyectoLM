@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Cambio Climático",
+        "description": "El aumento de las temperaturas globales y los fenómenos meteorológicos extremos.",
+        "impact": "Desplazamiento de poblaciones, escasez de recursos, pérdida de biodiversidad.",
+        "callToAction": "Reduce tu huella de carbono, apoya energías renovables.",
+        "image": "images/cambioClimatico.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Desigualdad Social",
+        "description": "Brechas económicas, acceso desigual a educación y salud.",
+        "impact": "Pobreza, falta de oportunidades, inestabilidad social.",
+        "callToAction": "Promueve la educación inclusiva, apoya iniciativas de equidad.",
+        "image": "images/desigualdadSocial.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Acceso al Agua Potable",
+        "description": "Millones de personas carecen de acceso a agua limpia y segura.",
+        "impact": "Enfermedades, inseguridad alimentaria, conflictos.",
+        "callToAction": "Ahorra agua, apoya proyectos de saneamiento.",
+        "image": "images/aguaPotable.jpeg"
+    }
+]
