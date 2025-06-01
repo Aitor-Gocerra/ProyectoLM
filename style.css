@@ -1,0 +1,196 @@
+/* Restablecimiento Básico y Tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; /* Limpiar flotantes */
+    padding: 20px 0;
+}
+
+/* Encabezado y Navegación */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Para posicionamiento absoluto si es necesario */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #77aaff;
+}
+
+/* Sección Héroe */
+#hero {
+    background: #5cb85c; /* Color de ejemplo para conciencia social */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* Ejemplo de posicionamiento */
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background: #449d44;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#hero button:hover {
+    background: #398439;
+}
+
+/* Estilo General de Secciones */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+/* Tarjetas de Problemas (para contenido cargado desde JSON) */
+.issue-cards {
+    display: flex; /* Flexbox para diseño adaptable */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centrar tarjetas cuando no llenan la fila */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.issue-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 40px); /* Tamaño del elemento flex para 3 columnas (aprox.) */
+    min-width: 280px; /* Ancho mínimo antes de envolver */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.issue-card h3 {
+    margin-bottom: 10px;
+    color: #5cb85c;
+}
+
+/* Pie de Página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* --- Diseño Adaptable --- */
+
+/* Ejemplo de Posicionamiento */
+/* Aquí usamos posicionamiento relativo en el encabezado y absoluto en un logo imaginado si es necesario.
+   Para este ejemplo, lo mantenemos simple para una mejor comprensión.
+   #logo {
+       position: absolute;
+       top: 10px;
+       left: 20px;
+   }
+*/
+
+/* Media Queries para Adaptabilidad */
+
+/* Para pantallas más pequeñas de 768px (ej. tabletas y más pequeñas) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Apilar elementos de navegación verticalmente */
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .issue-card {
+        flex: 1 1 calc(50% - 30px); /* Dos columnas en tabletas */
+    }
+}
+
+/* Para pantallas más pequeñas de 480px (ej. teléfonos móviles) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .issue-card {
+        flex: 1 1 90%; /* Columna única en móvil */
+        min-width: unset; /* Eliminar restricción de ancho mínimo */
+    }
+}
